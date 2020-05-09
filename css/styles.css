@@ -1,0 +1,27 @@
+#container {
+    display: flex;
+    height: 1200px;
+
+    background: pink;
+}
+
+#logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 14%;
+    min-width: 120px;
+
+    background: purple;
+    height: 60px;
+}
+
+#photo {
+    flex: 5;
+    background: seagreen;
+}
+
+#main {
+    flex: 5;
+    background: turquoise;
+}
