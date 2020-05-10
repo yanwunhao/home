@@ -1,19 +1,24 @@
+@font-face {
+    font-family: 'NMSL';
+    src: url('../font/spyagencyv3cond-18.ttf');
+}
+
 #container {
     display: flex;
     height: 1200px;
-
-    background: pink;
+    font-size: 24px;
 }
 
 #logo {
     position: fixed;
     top: 10px;
     left: 10px;
-    width: 14%;
+    width: 15.6%;
     min-width: 120px;
+}
 
-    background: purple;
-    height: 60px;
+#logo #logo-image {
+    width: 100%;
 }
 
 #photo {
@@ -23,10 +28,43 @@
 
 #main {
     flex: 5;
-    background: turquoise;
+    background: #30336b;
+}
+
+#main #article {
+    position: fixed;
+    margin-top: 160px;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+#main #article #slogan {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'NMSL';
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+#main #article .intro {
+    color: #fff;
+    line-height: 1.5em;
+}
+
+#main #article .heavy {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#main #article .thin {
+    font-weight: 200;
+    font-size: 0.8em;
 }
 
 @media screen and (max-width: 768px) {
+    #container {
+        font-size: 16px;
+    }
     #photo {
         display: none;
     }
